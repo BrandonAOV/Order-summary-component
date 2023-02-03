@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    --Pale_blue: hsl(225, 100%, 94%);
+    --Bright_blue: hsl(245, 75%, 52%);
+    --Very_pale_blue: hsl(225, 100%, 98%);
+    --Desaturated_blue: hsl(224, 23%, 55%);
+    --Dark_blue: hsl(223, 47%, 23%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    background-color: var(--Pale_blue);
+}
+
+main {
+    width: 335px;
+    border-radius: 1.2em;
+    overflow: hidden;
+    background-color: var(--Very_pale_blue);
+    box-shadow: 0 5px 10px hsla(0, 0%, 0%, 0.156);
+}
+
+footer {
+    position: absolute;
+    bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.image-container {
+    width: 100%;
+}
+
+.image-container > img {
+    width: 100%;
+}
+
+.info-container {
+    padding: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--Very_pale_blue);
+}
+
+.info-container__title {
+    font-size: 1.5em;
+    margin: 0 0 16px 0;
+    color: var(--Dark_blue);
+}
+
+.info-container__text {
+    font-size: 1em;
+    line-height: 1.7;
+    text-align: center;
+    margin-bottom: 1.2em;
+    color: var(--Desaturated_blue);
+}
+
+.plan-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1.8em;
+    padding: 1em;
+    border-radius: 0.8em;
+    background-color: hsl(225, 100%, 96%);
+}
+
+.plan-container__text {
+    font-size: 1em;
+    text-align: center;
+}
+
+.plan-container__text--light {
+    color: var(--Desaturated_blue);
+}
+
+.plan-container__text--dark {
+    color: var(--Dark_blue);
+    font-weight: bold;
+}
+
+.plan-container__link {
+    font-size: 0.8em;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.payment-button {
+    background-color: var(--Bright_blue);
+    color: white;
+    width: 100%;
+    padding: 1em;
+    border-radius: 0.8em;
+    text-align: center;
+    margin-bottom: 1.5em;
+    font-weight: bold;
+    box-shadow: 0 5px 10px hsla(245, 75%, 52%, 0.392);
+}
+
+.cancel-button {
+    color: var(--Desaturated_blue);
+    font-weight: bold;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 500px) {
+    body {
+        background-image: url(./images/pattern-background-desktop.svg);
+        background-repeat: repeat-x;
+    }
+
+    main {
+        width: 400px;
+    }
+}
